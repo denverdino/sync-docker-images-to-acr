@@ -1,0 +1,29 @@
+name: Sync docker images to Alibaba Cloud Container Registry Service
+
+on:
+    push:
+        branches: [ "master" ]
+    pull_request:
+        branches: [ "master" ]
+  
+jobs:
+    sync-images:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: 'Checkout GitHub Action'
+              uses: actions/checkout@v4
+
+            - name: Download image-syncer
+              run: |
+                wget https://github.com/AliyunContainerService/image-syncer/releases/download/v1.5.4/image-syncer-v1.5.4-linux-amd64.tar.gz
+                tar -xvf image-syncer-v1.5.4-linux-amd64.tar.gz
+
+            - name: Synchronize images to Alibaba Cloud Container Registry Service
+              env: 
+                ACR_USER: ${{ secrets.ALIBABA_CLOUD_ACR_USER }}
+                ACR_PASSWORD: ${{ secrets.ALIBABA_CLOUD_ACR_PASSWORD }}
+                DOCKER_HUB_USER: ${{ secrets.DOCKER_HUB_USER }}
+                DOCKER_HUB_PASSWORD: ${{ secrets.DOCKER_HUB_PASSWORD }}
+
+              run: ./image-syncer --auth=auth.json --images=images.yaml --days=2 --proc=2
