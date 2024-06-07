@@ -1,2 +1,2 @@
-vllm/vllm-openai: registry.cn-beijing.aliyuncs.com/weiyuan-test/vllm-openai
+vllm/vllm-openai:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/vllm-openai:latest
 nvcr.io/nvidia/tritonserver:24.05-vllm-python-py3: registry.cn-beijing.aliyuncs.com/weiyuan-test/tritonserver:24.05-vllm-python-py3
