@@ -3,3 +3,6 @@ nvcr.io/nvidia/tritonserver:24.05-vllm-python-py3: registry.cn-beijing.aliyuncs.
 ollama/ollama:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/ollama:latest
 ghcr.io/open-webui/open-webui:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/open-webui:latest
 ghcr.io/open-webui/pipelines:main: registry.cn-beijing.aliyuncs.com/weiyuan-test/open-webui-pipelines:main
+langgenius/dify-api: registry.cn-beijing.aliyuncs.com/weiyuan-test/dify-api
+langgenius/dify-web: registry.cn-beijing.aliyuncs.com/weiyuan-test/dify-web
+langgenius/dify-sandbox: registry.cn-beijing.aliyuncs.com/weiyuan-test/dify-sandbox
