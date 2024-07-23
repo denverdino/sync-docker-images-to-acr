@@ -16,8 +16,8 @@ jobs:
 
             - name: Download image-syncer
               run: |
-                wget https://github.com/AliyunContainerService/image-syncer/releases/download/v1.5.4/image-syncer-v1.5.4-linux-amd64.tar.gz
-                tar -xvf image-syncer-v1.5.4-linux-amd64.tar.gz
+                wget https://github.com/AliyunContainerService/image-syncer/releases/download/v1.5.5/image-syncer-v1.5.5-linux-amd64.tar.gz
+                tar -xvf image-syncer-v1.5.5-linux-amd64.tar.gz
 
             - name: Synchronize images to Alibaba Cloud Container Registry Service
               env: 
