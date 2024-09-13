@@ -1,4 +1,5 @@
 alpine:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/alpine:latest
+ubuntu:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/ubuntu:latest
 golang:1.22.5: registry.cn-beijing.aliyuncs.com/weiyuan-test/golang:1.22.5
 golang:1.22: registry.cn-beijing.aliyuncs.com/weiyuan-test/golang:1.22
 vllm/vllm-openai:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/vllm-openai:latest
