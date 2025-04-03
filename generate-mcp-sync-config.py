@@ -13,4 +13,4 @@ def list_repos(username):
 if __name__ == "__main__":
     username = "mcp"
     for repo in list_repos(username):
-        print(repo + ":latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/" + repo + ":latest")
+        print(f"mcp/{repo}:latest: registry.cn-beijing.aliyuncs.com/mcp-mirror/{repo}:latest")
