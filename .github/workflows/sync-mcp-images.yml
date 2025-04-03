@@ -1,13 +1,9 @@
 name: Sync docker images to Alibaba Cloud Container Registry Service
 
 on:
-    push:
-        branches: [ "master" ]
-    pull_request:
-        branches: [ "master" ]
     workflow_dispatch: {}
 jobs:
-    sync-images:
+    sync-mcp-images:
         runs-on: ubuntu-latest
 
         steps:
