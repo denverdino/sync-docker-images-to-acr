@@ -1,4 +1,4 @@
-name: Sync docker images to Alibaba Cloud Container Registry Service
+name: Sync MCP docker images to Alibaba Cloud Container Registry Service
 
 on:
     workflow_dispatch: {}
