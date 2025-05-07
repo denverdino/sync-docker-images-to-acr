@@ -13,4 +13,6 @@ def list_repos(username):
 if __name__ == "__main__":
     username = "mcp"
     for repo in list_repos(username):
+        if repo == "signatures":
+            continue
         print(f"mcp/{repo}:latest: registry.cn-beijing.aliyuncs.com/mcp-mirror/{repo}:latest")
