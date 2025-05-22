@@ -1,4 +1,5 @@
 qdrant/qdrant:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/qdrant:latest
+mem0/openmemory-mcp:latest : registry.cn-beijing.aliyuncs.com/openmemory-mcp:latest
 golangci/golangci-lint:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/golangci-lint:latest
 alpine:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/alpine:latest
 ubuntu:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/ubuntu:latest
@@ -10,6 +11,6 @@ nvcr.io/nvidia/tritonserver:24.05-vllm-python-py3: registry.cn-beijing.aliyuncs.
 ollama/ollama:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/ollama:latest
 ghcr.io/open-webui/open-webui:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/open-webui:latest
 ghcr.io/open-webui/pipelines:main: registry.cn-beijing.aliyuncs.com/weiyuan-test/open-webui-pipelines:main
-langgenius/dify-api:/\d+\.\d+\.\d+/: registry.cn-beijing.aliyuncs.com/weiyuan-test/dify-api
-langgenius/dify-web:/\d+\.\d+\.\d+/: registry.cn-beijing.aliyuncs.com/weiyuan-test/dify-web
-langgenius/dify-sandbox:/\d+\.\d+\.\d+/: registry.cn-beijing.aliyuncs.com/weiyuan-test/dify-sandbox
+#langgenius/dify-api:/\d+\.\d+\.\d+/: registry.cn-beijing.aliyuncs.com/weiyuan-test/dify-api
+#langgenius/dify-web:/\d+\.\d+\.\d+/: registry.cn-beijing.aliyuncs.com/weiyuan-test/dify-web
+#langgenius/dify-sandbox:/\d+\.\d+\.\d+/: registry.cn-beijing.aliyuncs.com/weiyuan-test/dify-sandbox
