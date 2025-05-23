@@ -1,5 +1,5 @@
 qdrant/qdrant:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/qdrant:latest
-mem0/openmemory-mcp:latest : registry.cn-beijing.aliyuncs.com/openmemory-mcp:latest
+mem0/openmemory-mcp:latest : registry.cn-beijing.aliyuncs.com/weiyuan-test/openmemory-mcp:latest
 golangci/golangci-lint:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/golangci-lint:latest
 alpine:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/alpine:latest
 ubuntu:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/ubuntu:latest
