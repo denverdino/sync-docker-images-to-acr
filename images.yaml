@@ -16,7 +16,7 @@ ghcr.io/open-webui/pipelines:main: registry.cn-beijing.aliyuncs.com/weiyuan-test
 #langgenius/dify-sandbox:/\d+\.\d+\.\d+/: registry.cn-beijing.aliyuncs.com/weiyuan-test/dify-sandbox
 langfuse/langfuse-worker:3: registry.cn-beijing.aliyuncs.com/weiyuan-test/langfuse-worker:3
 langfuse/langfuse:3: registry.cn-beijing.aliyuncs.com/weiyuan-test/langfuse:3
-clickhouse/clickhouse-server: registry.cn-beijing.aliyuncs.com/weiyuan-test/clickhouse-server
-minio/minio: registry.cn-beijing.aliyuncs.com/weiyuan-test/minio
+clickhouse/clickhouse-server:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/clickhouse-server:latest
+minio/minio:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/minio:latest
 redis:7: registry.cn-beijing.aliyuncs.com/weiyuan-test/redis:7
-postgres: registry.cn-beijing.aliyuncs.com/weiyuan-test/postgres
+postgres:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/postgres:latest
