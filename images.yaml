@@ -20,3 +20,4 @@ clickhouse/clickhouse-server:latest: registry.cn-beijing.aliyuncs.com/weiyuan-te
 minio/minio:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/minio:latest
 redis:7: registry.cn-beijing.aliyuncs.com/weiyuan-test/redis:7
 postgres:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/postgres:latest
+python:3.12-slim: registry.cn-beijing.aliyuncs.com/weiyuan-test/python:3.12-slim
