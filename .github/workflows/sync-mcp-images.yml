@@ -1,7 +1,9 @@
-name: Sync MCP docker images to Alibaba Cloud Container Registry Service
+name: Sync MCP docker images to ACR
 
 on:
     workflow_dispatch: {}
+    schedule:
+        - cron: '0 16 * * *'
 jobs:
     sync-mcp-images:
         runs-on: ubuntu-latest
