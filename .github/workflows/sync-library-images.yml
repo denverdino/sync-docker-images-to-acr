@@ -1,0 +1,33 @@
+name: Sync official docker images to Alibaba Cloud Container Registry Service
+
+on:
+    workflow_dispatch: {}
+jobs:
+    sync-mcp-images:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: 'Checkout GitHub Action'
+              uses: actions/checkout@v2
+
+            - uses: actions/setup-python@v5
+              with:
+                python-version: '3.13'
+            - run: pip install requests
+            - name: 'Generate mcp-images.yaml'
+              run: |
+                python3 generate-library-sync-config.py > library-images.yaml
+
+            - name: Download image-syncer
+              run: |
+                wget https://github.com/AliyunContainerService/image-syncer/releases/download/v1.5.5/image-syncer-v1.5.5-linux-amd64.tar.gz
+                tar -xvf image-syncer-v1.5.5-linux-amd64.tar.gz
+
+            - name: Synchronize images to Alibaba Cloud Container Registry Service
+              env: 
+                ACR_USER: ${{ secrets.ALIBABA_CLOUD_ACR_USER }}
+                ACR_PASSWORD: ${{ secrets.ALIBABA_CLOUD_ACR_PASSWORD }}
+                DOCKER_HUB_USER: ${{ secrets.DOCKER_HUB_USER }}
+                DOCKER_HUB_PASSWORD: ${{ secrets.DOCKER_HUB_PASSWORD }}
+
+              run: ./image-syncer --auth=auth.json --images=library-images.yaml --proc=2
