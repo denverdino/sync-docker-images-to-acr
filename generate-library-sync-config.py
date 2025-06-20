@@ -1,4 +1,5 @@
 import requests
+from datetime import datetime
 
 def list_repos(username):
     repos = []
@@ -12,7 +13,9 @@ def list_repos(username):
 
 if __name__ == "__main__":
     username = "library"
-    for repo in list_repos(username):
-        if repo == "signatures":
-            continue
-        print(f"{repo}:latest: registry.cn-beijing.aliyuncs.com/docker-library-mirror/{repo}:latest")
+    day = datetime.now().day
+    is_odd_day = day % 2 == 1
+    repos = [repo for repo in list_repos(username) if repo != "signatures"]
+    for idx, repo in enumerate(repos, start=1):
+        if (idx % 2 == 1 and is_odd_day) or (idx % 2 == 0 and not is_odd_day):
+            print(f"{repo}:latest: registry.cn-beijing.aliyuncs.com/docker-library-mirror/{repo}:latest")
