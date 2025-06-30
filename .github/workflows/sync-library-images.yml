@@ -3,7 +3,7 @@ name: Sync official docker images to ACR
 on:
     workflow_dispatch: {}
     schedule:
-        - cron: '0 17 * * *'
+        - cron: '0 18 * * *'
 jobs:
     sync-library-images:
         runs-on: ubuntu-latest
