@@ -7,6 +7,7 @@ alpine:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/alpine:latest
 ubuntu:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/ubuntu:latest
 golang:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/golang:latest
 golang:1.25.3: registry.cn-beijing.aliyuncs.com/weiyuan-test/golang:1.25.3
+debian:13-slim: registry.cn-beijing.aliyuncs.com/weiyuan-test/debian:13-slim
 #golang:1.22: registry.cn-beijing.aliyuncs.com/weiyuan-test/golang:1.22
 #vllm/vllm-openai:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/vllm-openai:latest
 #lmsysorg/sglang:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/sglang:latest
