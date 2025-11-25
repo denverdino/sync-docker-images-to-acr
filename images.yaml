@@ -23,5 +23,5 @@ golang:1.25.3: registry.cn-beijing.aliyuncs.com/weiyuan-test/golang:1.25.3
 #minio/minio:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/minio:latest
 redis:7: registry.cn-beijing.aliyuncs.com/weiyuan-test/redis:7
 postgres:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/postgres:latest
-python:3.12-slim: registry.cn-beijing.aliyuncs.com/weiyuan-test/python:3.12-slim
+python:3.13-slim: registry.cn-beijing.aliyuncs.com/weiyuan-test/python:3.13-slim
 e2bdev/code-interpreter:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/code-interpreter:latest
