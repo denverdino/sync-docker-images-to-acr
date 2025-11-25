@@ -1,4 +1,5 @@
-kindest/node:v1.34.0: registry.cn-beijing.aliyuncs.com/weiyuan-test/node:v1.34.0
+moby/buildkit:buildx-stable-1: registry.cn-beijing.aliyuncs.com/weiyuan-test/buildkit:buildx-stable-1
+kindest/node:v1.34.0: registry.cn-beijing.aliyuncs.com/weiyuan-test/kindest-node:v1.34.0
 #qdrant/qdrant:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/qdrant:latest
 #mem0/openmemory-mcp:latest : registry.cn-beijing.aliyuncs.com/weiyuan-test/openmemory-mcp:latest
 golangci/golangci-lint:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/golangci-lint:latest
