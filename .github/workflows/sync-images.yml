@@ -1,9 +1,10 @@
 name: Sync docker images to ACR
 
 on:
+    push:
+        branches:
+            - master
     workflow_dispatch: {}
-    schedule:
-        - cron: '0 15 * * *'
 jobs:
     sync-images:
         runs-on: ubuntu-latest
