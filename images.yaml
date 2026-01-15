@@ -1,8 +1,11 @@
-docker:dind: registry.cn-beijing.aliyuncs.com/weiyuan-test/docker:dind
-docker:dind-rootless: registry.cn-beijing.aliyuncs.com/weiyuan-test/docker:dind-rootless
-moby/buildkit:rootless: registry.cn-beijing.aliyuncs.com/weiyuan-test/buildkit:rootless
-moby/buildkit:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/buildkit:latest
-moby/buildkit:buildx-stable-1: registry.cn-beijing.aliyuncs.com/weiyuan-test/buildkit:buildx-stable-1
+docker/sandbox-templates:claude-code: registry.cn-beijing.aliyuncs.com/weiyuan-test/sandbox-templates:claude-code
+docker/sandbox-templates:ubuntu-python: registry.cn-beijing.aliyuncs.com/weiyuan-test/sandbox-templates:ubuntu-python
+node:22-slim: registry.cn-beijing.aliyuncs.com/weiyuan-test/node:22-slim
+#docker:dind: registry.cn-beijing.aliyuncs.com/weiyuan-test/docker:dind
+#docker:dind-rootless: registry.cn-beijing.aliyuncs.com/weiyuan-test/docker:dind-rootless
+#moby/buildkit:rootless: registry.cn-beijing.aliyuncs.com/weiyuan-test/buildkit:rootless
+#moby/buildkit:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/buildkit:latest
+#moby/buildkit:buildx-stable-1: registry.cn-beijing.aliyuncs.com/weiyuan-test/buildkit:buildx-stable-1
 #kindest/node:v1.34.0: registry.cn-beijing.aliyuncs.com/weiyuan-test/kindest-node:v1.34.0
 #qdrant/qdrant:latest: registry.cn-beijing.aliyuncs.com/weiyuan-test/qdrant:latest
 #mem0/openmemory-mcp:latest : registry.cn-beijing.aliyuncs.com/weiyuan-test/openmemory-mcp:latest
